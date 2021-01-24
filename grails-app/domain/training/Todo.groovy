@@ -1,11 +1,13 @@
 package training
 
+import todoapp.Attachment
+
 class Todo {
 
     String title
     String description
 
-    static hasMany = [checkList: CheckList]
+    static hasMany = [checkList: CheckList, attachment: Attachment]
     static belongsTo = [user: User]
 
     static constraints = {

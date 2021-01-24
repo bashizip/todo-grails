@@ -1,5 +1,11 @@
 ---
 grails:
+
+server:
+    port: 8084
+    servlet:
+        context-path: /todo-app
+
     profile: web
     codegen:
         defaultPackage: todoapp
@@ -105,6 +111,7 @@ dataSource:
     password: ''
 
 environments:
+
     development:
         dataSource:
             dbCreate: create-drop
